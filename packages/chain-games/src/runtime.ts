@@ -6,6 +6,7 @@ import { Balances } from '@zknoid/chain-sdk/dist/framework';
 import { ModulesConfig } from '@proto-kit/common';
 import { CheckersLogic } from './checkers';
 import { GuessGame } from './number_guessing';
+import { SlotMachine } from './TokenTwist';
 
 const modules = {
   ArkanoidGameHub,
@@ -14,6 +15,7 @@ const modules = {
   RandzuLogic,
   CheckersLogic,
   GuessGame,
+  SlotMachine
 };
 
 const config: ModulesConfig<typeof modules> = {
@@ -25,6 +27,7 @@ const config: ModulesConfig<typeof modules> = {
   RandzuLogic: {},
   CheckersLogic: {},
   GuessGame: {},
+  SlotMachine: {},
 };
 
 export default {

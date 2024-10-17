@@ -6,6 +6,7 @@ export * from '@zknoid/chain-games/dist/randzu/index.js';
 export * from '@zknoid/chain-games/dist/checkers/index.js';
 export * from '@zknoid/chain-games/dist/arkanoid/index.js';
 export * from '@zknoid/chain-games/dist/thimblerig/index.js';
+export * from '@zknoid/chain-games/dist/TokenTwist/index.js';
 
 export * from '@zknoid/chain-sdk/dist/engine/index.js';
 export * from '@zknoid/chain-sdk/dist/framework/index.js';
