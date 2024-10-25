@@ -8,15 +8,15 @@ import { tokenTwistConfig } from './config';
 import ZkNoidGameContext from "@zknoid/sdk/lib/contexts/ZkNoidGameContext";
 import { useProtokitChainStore } from "@zknoid/sdk/lib/stores/protokitChain";
 import CoverSVG from './assets/game-cover.svg';
-import { DEFAULT_PARTICIPATION_FEE } from '/home/ramans1819/grants/zknoid/packages/chain-sdk/src/engine/LobbyManager';
+import { DEFAULT_PARTICIPATION_FEE } from '/Users/anuragsen/Desktop/Testing/packages/chain-sdk/src/engine/LobbyManager';
 import { motion } from 'framer-motion';
 import Button from "@zknoid/sdk/components/shared/Button";
 import { useNotificationStore } from "@zknoid/sdk/components/shared/Notification/lib/notificationStore";
 import Rules from './components/Rules';
 import HowToPlay from './components/HowToPlay';
 import BetControl from './components/BetControl';
-import { useMinaBalancesStore } from '/home/ramans1819/grants/zknoid/packages/sdk/lib/stores/minaBalances';
-import { useProtokitBalancesStore } from '/home/ramans1819/grants/zknoid/packages/sdk/lib/stores/protokitBalances';
+import { useMinaBalancesStore } from '/Users/anuragsen/Desktop/Testing//packages/sdk/lib/stores/minaBalances';
+import { useProtokitBalancesStore } from '/Users/anuragsen/Desktop/Testing/packages/sdk/lib/stores/protokitBalances';
 
 const SYMBOLS = ['💲', '₿', '💰'];
 const ICON_HEIGHT = 100;
@@ -326,8 +326,8 @@ export default function Slot_Machine({
   return (
     <GamePage
       gameConfig={tokenTwistConfig}
-      // image={CoverSVG}
-      // mobileImage={CoverSVG}
+      gameTitleImage={CoverSVG}
+      // gameMobileImage={CoverSVG}
       // defaultPage={'Game'}
     >
       <div className="item-center mb-4 flex justify-between">
