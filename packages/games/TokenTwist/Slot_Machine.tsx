@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useMemo, useRef, useState } from 'react';
-import { Field, PublicKey, UInt64 } from 'o1js';
-// import { UInt64 } from '@proto-kit/library';
+import { Field, PublicKey} from 'o1js';
+import { UInt64 } from '@proto-kit/library';
 import { useNetworkStore } from "@zknoid/sdk/lib/stores/network";
 import { ClientAppChain, SlotMachine } from 'zknoid-chain-dev';
 import GamePage from "@zknoid/sdk/components/framework/GamePage";
@@ -8,15 +8,15 @@ import { tokenTwistConfig } from './config';
 import ZkNoidGameContext from "@zknoid/sdk/lib/contexts/ZkNoidGameContext";
 import { useProtokitChainStore } from "@zknoid/sdk/lib/stores/protokitChain";
 import CoverSVG from './assets/game-cover.svg';
-import { DEFAULT_PARTICIPATION_FEE } from '/Users/anuragsen/Desktop/Testing/packages/chain-sdk/src/engine/LobbyManager';
+import { DEFAULT_PARTICIPATION_FEE } from '@zknoid/chain-sdk/src/engine/LobbyManager';
 import { motion } from 'framer-motion';
 import Button from "@zknoid/sdk/components/shared/Button";
 import { useNotificationStore } from "@zknoid/sdk/components/shared/Notification/lib/notificationStore";
 import Rules from './components/Rules';
 import HowToPlay from './components/HowToPlay';
 import BetControl from './components/BetControl';
-import { useMinaBalancesStore } from '/Users/anuragsen/Desktop/Testing//packages/sdk/lib/stores/minaBalances';
-import { useProtokitBalancesStore } from '/Users/anuragsen/Desktop/Testing/packages/sdk/lib/stores/protokitBalances';
+import { useMinaBalancesStore } from '@zknoid/sdk/lib/stores/minaBalances';
+import { useProtokitBalancesStore } from '@zknoid/sdk/lib/stores/protokitBalances';
 
 const SYMBOLS = ['💲', '₿', '💰'];
 const ICON_HEIGHT = 100;

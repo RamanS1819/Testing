@@ -2,7 +2,7 @@ import { createZkNoidGameConfig } from '@zknoid/sdk/lib/createConfig';
 import { ZkNoidGameType } from '@zknoid/sdk/lib/platform/game_types';
 import { ZkNoidGameFeature, ZkNoidGameGenre } from '@zknoid/sdk/lib/platform/game_tags';
 import { SlotMachine } from 'zknoid-chain-dev'
-// import { LogoMode } from '/home/ramans1819/grants/zknoid/packages/sdk/constants/games';
+import { LogoMode } from '/home/ramans1819/grants/zknoid/packages/sdk/constants/games';
 import Slot_Machine from './Slot_Machine';
 
 export const tokenTwistConfig = createZkNoidGameConfig({
@@ -11,7 +11,7 @@ export const tokenTwistConfig = createZkNoidGameConfig({
   name: 'TokenTwist : Try your luck',
   description: 'Player try their luck to win the jackpot',
   image: '/image/games/logo1.png',
-  // logoMode: LogoMode.CENTER,
+  logoMode: LogoMode.CENTER,
   genre: ZkNoidGameGenre.Lucky,
   features: [ZkNoidGameFeature.SinglePlayer],
   isReleased: true,

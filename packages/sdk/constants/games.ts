@@ -1,5 +1,11 @@
 import { ZkNoidGameFeature, ZkNoidGameGenre } from '../lib/platform/game_tags';
 
+export enum LogoMode {
+  CENTER = 0,
+  FULL_WIDTH = 1,
+  BOTTOM_RIGHT = 2,
+  CONTAIN = 3,
+}
 
 export interface IGame {
   id: string;
