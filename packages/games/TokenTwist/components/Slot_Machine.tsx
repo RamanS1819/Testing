@@ -4,17 +4,18 @@ import { UInt64 } from '@proto-kit/library';
 import { useNetworkStore } from "@zknoid/sdk/lib/stores/network";
 import { ClientAppChain, SlotMachine } from 'zknoid-chain-dev';
 import GamePage from "@zknoid/sdk/components/framework/GamePage";
-import { tokenTwistConfig } from './config';
+import { tokenTwistConfig } from '../config';
 import ZkNoidGameContext from "@zknoid/sdk/lib/contexts/ZkNoidGameContext";
 import { useProtokitChainStore } from "@zknoid/sdk/lib/stores/protokitChain";
-import CoverSVG from './assets/game-cover.svg';
+// src/declarations.d.ts
+import { CoverSVG } from "../assets/game-cover.svg";
 import { DEFAULT_PARTICIPATION_FEE } from '@zknoid/chain-sdk/src/engine/LobbyManager';
 import { motion } from 'framer-motion';
 import Button from "@zknoid/sdk/components/shared/Button";
 import { useNotificationStore } from "@zknoid/sdk/components/shared/Notification/lib/notificationStore";
-import Rules from './components/Rules';
-import HowToPlay from './components/HowToPlay';
-import BetControl from './components/BetControl';
+import Rules from './Rules';
+import HowToPlay from './HowToPlay';
+import BetControl from './BetControl';
 import { useMinaBalancesStore } from '@zknoid/sdk/lib/stores/minaBalances';
 import { useProtokitBalancesStore } from '@zknoid/sdk/lib/stores/protokitBalances';
 

@@ -14,14 +14,14 @@ import { gameTemplateConfig } from "./game-template/config";
 export const zkNoidConfig = createConfig({
   games: [
     // gameTemplateConfig,
-    lotteryConfig,
-    tileVilleConfig,
-    randzuConfig,
-    checkersConfig,
-    thimblerigConfig,
-    pokerConfig,
-    arkanoidConfig,
-    numberGuessingConfig,
+    // lotteryConfig,
+    // tileVilleConfig,
+    // randzuConfig,
+    // checkersConfig,
+    // thimblerigConfig,
+    // pokerConfig,
+    // arkanoidConfig,
+    // numberGuessingConfig,
     tokenTwistConfig,
     
   ],
